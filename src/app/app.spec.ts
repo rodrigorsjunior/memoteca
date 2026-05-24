@@ -1,6 +1,9 @@
 import { TestBed } from '@angular/core/testing';
 import { RouterModule } from '@angular/router';
 import { App } from './app';
+import { Cabecalho } from './componentes/cabecalho/cabecalho';
+import { Rodape } from './componentes/rodape/rodape';
+import { CriarPensamento } from './componentes/pensamentos/criar-pensamento/criar-pensamento';
 
 describe('App', () => {
   beforeEach(async () => {
@@ -9,7 +12,10 @@ describe('App', () => {
         RouterModule.forRoot([])
       ],
       declarations: [
-        App
+        App,
+        Cabecalho,
+        Rodape,
+        CriarPensamento
       ],
     }).compileComponents();
   });
@@ -20,10 +26,11 @@ describe('App', () => {
     expect(app).toBeTruthy();
   });
 
-  it('should render title', async () => {
+  it('should render header', async () => {
     const fixture = TestBed.createComponent(App);
+    fixture.detectChanges();
     await fixture.whenStable();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, memoteca');
+    expect(compiled.querySelector('app-cabecalho')).toBeTruthy();
   });
 });
