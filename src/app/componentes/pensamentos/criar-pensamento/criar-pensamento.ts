@@ -6,4 +6,21 @@ import { Component } from '@angular/core';
   templateUrl: './criar-pensamento.html',
   styleUrl: './criar-pensamento.css',
 })
-export class CriarPensamento {}
+export class CriarPensamento {
+
+  pensamento = {
+    id: '1',
+    conteudo: 'Apendendo Angular',
+    autoria: 'Dev',
+    modelo: 'modelo1',
+  };
+
+  criarPensamento() {
+    alert('Pensamento criado com sucesso!');
+  }
+
+  cancelar() {
+    alert('Pensamento cancelado!');
+  }
+
+}
