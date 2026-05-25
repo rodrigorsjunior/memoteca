@@ -6,4 +6,13 @@ import { Component } from '@angular/core';
   templateUrl: './listar-pensamento.html',
   styleUrl: './listar-pensamento.css',
 })
-export class ListarPensamento {}
+export class ListarPensamento {
+
+  listaPensamentos =  [
+    {
+      conteudo: 'Pensamento 1',
+      autoria: 'Autoria 1',
+      modelo: 'modelo1'
+    }
+  ]
+}

@@ -10,7 +10,7 @@ export class CriarPensamento {
 
   pensamento = {
     id: '1',
-    conteudo: 'Apendendo Angular',
+    conteudo: 'Aprendendo Angular',
     autoria: 'Dev',
     modelo: 'modelo1',
   };
