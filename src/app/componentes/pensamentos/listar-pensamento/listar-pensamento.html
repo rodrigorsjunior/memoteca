@@ -5,8 +5,12 @@
     </header>
     <div class="mural">
         <div *ngFor="let pensamento of listaPensamentos">
-            <app-pensamento></app-pensamento>
+            <app-pensamento [pensamento]="pensamento"></app-pensamento>
         </div>
     </div>
-
 </section>
+<ng-template>
+    <div class="ff-inter sem-pensamentos">
+        <p>Nenhum pensamento encontrado!</p>
+    </div>
+</ng-template>
