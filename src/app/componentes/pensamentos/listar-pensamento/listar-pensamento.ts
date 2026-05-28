@@ -8,8 +8,8 @@ import { Component } from '@angular/core';
 })
 export class ListarPensamento {
 
-   listaPensamentos = [
-/*     {
+  listaPensamentos = [
+    {
       conteudo: 'Passo informações para o componente filho',
       autoria: 'Componente pai',
       modelo: 'modelo3'
@@ -24,6 +24,6 @@ export class ListarPensamento {
       autoria: '',
       modelo: 'modelo1'
     },
- */  ];
+  ];
 
 }
