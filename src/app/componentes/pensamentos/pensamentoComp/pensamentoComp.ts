@@ -1,15 +1,17 @@
 import { Component, Input } from '@angular/core';
+import { Pensamento } from '../pensamento';
 
 @Component({
   selector: 'app-pensamento',
   standalone: false,
-  templateUrl: './pensamento.html',
-  styleUrl: './pensamento.css',
+  templateUrl: './pensamentoComp.html',
+  styleUrls: ['./pensamentoComp.css'],
 })
-export class Pensamento {
+export class PensamentoComp {
 
   @Input()
-  pensamento = {
+  pensamento: Pensamento = {
+    id: 0,
     conteudo: 'conteudo',
     autoria: 'autor',
     modelo: 'modelo1'

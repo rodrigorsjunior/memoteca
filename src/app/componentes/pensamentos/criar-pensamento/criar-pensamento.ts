@@ -4,12 +4,12 @@ import { Component } from '@angular/core';
   selector: 'app-criar-pensamento',
   standalone: false,
   templateUrl: './criar-pensamento.html',
-  styleUrl: './criar-pensamento.css',
+  styleUrls: ['./criar-pensamento.css'],
 })
 export class CriarPensamento {
 
   pensamento = {
-    id: '1',
+    id: 1,
     conteudo: 'Aprendendo Angular',
     autoria: 'Dev',
     modelo: 'modelo1',
