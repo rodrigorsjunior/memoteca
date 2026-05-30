@@ -9,10 +9,18 @@ import { CriarPensamento } from './componentes/pensamentos/criar-pensamento/cria
 import { FormsModule } from '@angular/forms';
 import { ListarPensamento } from './componentes/pensamentos/listar-pensamento/listar-pensamento';
 import { PensamentoComp } from './componentes/pensamentos/pensamentoComp/pensamentoComp';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  declarations: [App, Cabecalho, Rodape, CriarPensamento, ListarPensamento, PensamentoComp],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  declarations: [
+    App,
+    Cabecalho,
+    Rodape,
+    CriarPensamento,
+    ListarPensamento,
+    PensamentoComp,
+  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [provideBrowserGlobalErrorListeners()],
   bootstrap: [App],
 })
