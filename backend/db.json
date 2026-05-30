@@ -17,18 +17,6 @@
       "conteudo": "Angular é o melhor'",
       "autoria": "Dev Alura",
       "modelo": "modelo3"
-    },
-    {
-      "conteudo": "Teste",
-      "autoria": "Legalzao",
-      "modelo": "modelo3",
-      "id": 4
-    },
-    {
-      "conteudo": "teste",
-      "autoria": "teste",
-      "modelo": "modelo2",
-      "id": 5
     }
   ]
 }
