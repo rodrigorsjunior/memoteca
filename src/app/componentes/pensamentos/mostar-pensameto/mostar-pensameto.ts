@@ -2,12 +2,12 @@ import { Component, Input } from '@angular/core';
 import { Pensamento } from '../pensamento';
 
 @Component({
-  selector: 'app-pensamento',
+  selector: 'app-mostrar-pensamento',
   standalone: false,
-  templateUrl: './pensamentoComp.html',
-  styleUrls: ['./pensamentoComp.css'],
+  templateUrl: './mostar-pensameto.html',
+  styleUrls: ['./mostar-pensameto.css'],
 })
-export class PensamentoComp {
+export class MostarPensameto {
 
   @Input()
   pensamento: Pensamento = {

@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PensamentoComp } from './pensamentoComp';
+import { ExcluirPensamento } from './excluir-pensamento';
 
-describe('Pensamento', () => {
-  let component: PensamentoComp;
-  let fixture: ComponentFixture<PensamentoComp>;
+describe('ExcluirPensamento', () => {
+  let component: ExcluirPensamento;
+  let fixture: ComponentFixture<ExcluirPensamento>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [PensamentoComp],
+      declarations: [ExcluirPensamento],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(PensamentoComp);
+    fixture = TestBed.createComponent(ExcluirPensamento);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });
